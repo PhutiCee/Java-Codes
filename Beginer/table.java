@@ -1,3 +1,5 @@
+package Beginer;
+
 public class table {
     public static void main(String[] args) {
         int[] arr = { 1, 5, 8, 7, 6, 5, 5 };

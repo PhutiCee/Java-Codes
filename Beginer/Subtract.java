@@ -1,3 +1,5 @@
+package Beginer;
+
 import java.util.Scanner;
 
 public class Subtract {

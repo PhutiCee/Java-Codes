@@ -1,7 +1,8 @@
+package Beginer;
+
 import java.util.Scanner;
 
-public class Hello {
-
+public class Eggs {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
