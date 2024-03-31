@@ -1,5 +1,3 @@
-package Beginer;
-
 import java.util.Random;
 
 public class PracticeBasic {

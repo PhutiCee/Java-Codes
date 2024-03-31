@@ -1,8 +1,16 @@
 package Intermediate;
 
+import java.util.Scanner;
+
 public class Recursion {
     public static void main(String[] args) {
-        System.out.println("Factorial of 5 = " + factorial(5));
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Factorial of: ");
+        int num = scan.nextInt();
+        System.out.println("Factorial of " + num + " = " + factorial(num));
+
+        scan.close();
     }
 
     static int factorial(int n) {

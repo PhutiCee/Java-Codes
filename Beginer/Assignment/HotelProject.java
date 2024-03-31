@@ -135,38 +135,42 @@ class HotelManagementSystem {
 public class HotelProject {
     public static void main(String[] args) {
         // Example usage
-        Hotel hotel1 = new Hotel("Hotel 1", "Location 1");
-        Hotel hotel2 = new Hotel("Hotel 2", "Location 2");
+        // Hotel hotel1 = new Hotel("Hotel 1", "Location 1");
+        // Hotel hotel2 = new Hotel("Hotel 2", "Location 2");
 
-        Room room1 = new Room(101, 2, 100.0);
-        Room room2 = new Room(102, 4, 150.0);
-        Room room3 = new Room(201, 3, 120.0);
+        // Room room1 = new Room(101, 2, 100.0);
+        // Room room2 = new Room(102, 4, 150.0);
+        // Room room3 = new Room(201, 3, 120.0);
 
-        hotel1.addRoom(room1);
-        hotel1.addRoom(room2);
-        hotel2.addRoom(room3);
+        // hotel1.addRoom(room1);
+        // hotel1.addRoom(room2);
+        // hotel2.addRoom(room3);
 
-        HotelManagementSystem hotelManagementSystem = new HotelManagementSystem();
-        hotelManagementSystem.addHotel(hotel1);
-        hotelManagementSystem.addHotel(hotel2);
+        // HotelManagementSystem hotelManagementSystem = new HotelManagementSystem();
+        // hotelManagementSystem.addHotel(hotel1);
+        // hotelManagementSystem.addHotel(hotel2);
 
-        Date startDate = new Date(); // Current date
-        Date endDate = new Date(startDate.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days later
+        // Date startDate = new Date(); // Current date
+        // Date endDate = new Date(startDate.getTime() + 7 * 24 * 60 * 60 * 1000); // 7
+        // days later
 
-        List<Room> availableRooms = hotelManagementSystem.findAvailableRooms(startDate, endDate);
-        System.out.println("Available rooms:");
-        for (Room room : availableRooms) {
-            System.out.println(
-                    room.getNumber() + " - Capacity: " + room.getCapacity() + " - Price: " + room.getPricePerNight());
-        }
+        // List<Room> availableRooms =
+        // hotelManagementSystem.findAvailableRooms(startDate, endDate);
+        // System.out.println("Available rooms:");
+        // for (Room room : availableRooms) {
+        // System.out.println(
+        // room.getNumber() + " - Capacity: " + room.getCapacity() + " - Price: " +
+        // room.getPricePerNight());
+        // }
 
-        if (!availableRooms.isEmpty()) {
-            Reservation reservation = hotelManagementSystem.makeReservation(hotel1, room1, "Keabetswe", startDate,
-                    endDate);
-            System.out.println("\nReservation details:");
-            System.out.println("Customer: " + reservation.getCustomerName());
-            System.out.println("Room: " + reservation.getReservedRoom().getNumber());
-            System.out.println("Total Price: " + reservation.calculateTotalPrice());
-        }
+        // if (!availableRooms.isEmpty()) {
+        // Reservation reservation = hotelManagementSystem.makeReservation(hotel1,
+        // room1, "Keabetswe", startDate,
+        // endDate);
+        // System.out.println("\nReservation details:");
+        // System.out.println("Customer: " + reservation.getCustomerName());
+        // System.out.println("Room: " + reservation.getReservedRoom().getNumber());
+        // System.out.println("Total Price: " + reservation.calculateTotalPrice());
+        // }
     }
 }
